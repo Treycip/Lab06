@@ -4,22 +4,13 @@
              x:Class="App6.MainPage">
 
     <StackLayout>
-        <!--<ListView x:Name="lvEstudiantes"> </ListView>-->
-        <!--<ListView>
-            <ListView.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Hugo</x:String>
-                    <x:String>Paco</x:String>
-                    <x:String>Luis</x:String>
-                </x:Array>
-            </ListView.ItemsSource>
-        </ListView>-->
+       
         <ListView x:Name="lvEstudiantes1" IsGroupingEnabled="True">
             <ListView.GroupHeaderTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout BackgroundColor="LightPink">
-                            <Label Text="{Binding Key}" TextColor="White" FontSize="Large"  HorizontalTextAlignment="Center"  />
+                        <StackLayout BackgroundColor="MediumPurple">
+                            <Label Text="{Binding Key}" TextColor="Black" FontSize="Large"  HorizontalTextAlignment="Center"  />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
@@ -27,11 +18,11 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" BackgroundColor="Black">
-                            <Label Text="{Binding Nombres}" />
-                            <Label Text="{Binding Apellidos}" />
-                            <Label Text=" - Edad: " />
-                            <Label Text="{Binding Edad}" />
+                        <StackLayout Orientation="Horizontal" BackgroundColor="WhiteSmoke" Spacing="50">
+                            <Label Text="{Binding Nombres}" TextColor="Black" FontSize="Medium" />
+                            <Label Text="{Binding Apellidos}" TextColor="Black" FontSize="Medium" />
+                            <Label Text=" Edad: " TextColor="Black" FontSize="Medium" />
+                            <Label Text="{Binding Edad}" TextColor="Black" FontSize="Medium"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
